@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta property="al:android:app_name" content="Medium" > <!-- NEW -->
+  <meta name="telegram:channel" content="@loline_mag" /><!-- NEW -->
+  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ትንሹ አምላክ</title>
+  <meta data-n-head="ssr" charset="utf-8">
+  <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+  <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+  <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+  <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Loline Blog">
+  <meta data-n-head="ssr" data-hid="author" name="author" content="Loline">
+  <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#f8d214">
+  <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Loline Blog">
+  <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary_large_image">
+  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="https://blog.lolinemag.com/favicon.png">
+  <link data-n-head="ssr" rel="preconnect"
+    href="https://blog.lolinemag.com/article/b859c055-2a71-4a47-9f35-28aaed3205a8/kit.fontawesome.com/">
+  <link data-n-head="ssr" rel="preconnect" href="https://api.lolinemag.com/api/">
+  <link data-n-head="ssr" data-hid="gf-prefetch" rel="dns-prefetch" href="https://fonts.gstatic.com/">
+  <link data-n-head="ssr" data-hid="gf-preconnect" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link data-n-head="ssr" data-hid="gf-preload" rel="preload" as="style"
+    href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/css2.css">
+  <link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon"
+    href="https://blog.lolinemag.com/_nuxt/icons/icon_64x64.9dc7dd.png">
+  <link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon"
+    href="https://blog.lolinemag.com/_nuxt/icons/icon_512x512.9dc7dd.png" sizes="512x512">
+  <link data-n-head="ssr" rel="manifest" href="https://blog.lolinemag.com/_nuxt/manifest.a87b5afc.json"
+    data-hid="manifest">
+  <style data-n-head="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">
+    :root {
+      --v-anchor-base: #f8d214;
+      --v-primary-base: #f8d214;
+      --v-primary-lighten1: #fde047;
+      --v-primary-lighten2: #fef08a;
+      --v-primary-lighten4: #fef9c3;
+      --v-primary-lighten5: #fefce8;
+      --v-primary-darken1: #facc15;
+      --v-secondary-base: #111827;
+      --v-secondary-lighten1: #18212f;
+      --v-secondary-lighten2: #1f2937;
+      --v-secondary-lighten3: #374151;
+      --v-secondary-lighten4: #6b7280;
+      --v-secondary-lighten5: #d1d5db;
+      --v-accent-base: #424242;
+      --v-accent-lighten5: #c1c1c1;
+      --v-accent-lighten4: #a6a6a6;
+      --v-accent-lighten3: #8b8b8b;
+      --v-accent-lighten2: #727272;
+      --v-accent-lighten1: #595959;
+      --v-accent-darken1: #2c2c2c;
+      --v-accent-darken2: #171717;
+      --v-accent-darken3: #000000;
+      --v-accent-darken4: #000000;
+      --v-error-base: #ff6e40;
+      --v-error-lighten5: #fffcc3;
+      --v-error-lighten4: #ffdea7;
+      --v-error-lighten3: #ffc28c;
+      --v-error-lighten2: #ffa572;
+      --v-error-lighten1: #ff8959;
+      --v-error-darken1: #df5328;
+      --v-error-darken2: #bf370e;
+      --v-error-darken3: #a01600;
+      --v-error-darken4: #820000;
+      --v-info-base: #26a69a;
+      --v-info-lighten5: #c3ffff;
+      --v-info-lighten4: #a5ffff;
+      --v-info-lighten3: #87fbed;
+      --v-info-lighten2: #6aded0;
+      --v-info-lighten1: #4bc2b5;
+      --v-info-darken1: #008b80;
+      --v-info-darken2: #007167;
+      --v-info-darken3: #00584f;
+      --v-info-darken4: #004038;
+      --v-success-base: #4caf50;
+      --v-success-lighten5: #dcffd6;
+      --v-success-lighten4: #beffba;
+      --v-success-lighten3: #a2ff9e;
+      --v-success-lighten2: #85e783;
+      --v-success-lighten1: #69cb69;
+      --v-success-darken1: #2d9437;
+      --v-success-darken2: #00791e;
+      --v-success-darken3: #006000;
+      --v-success-darken4: #004700;
+      --v-warning-base: #ffc107;
+      --v-warning-lighten5: #ffffae;
+      --v-warning-lighten4: #ffff91;
+      --v-warning-lighten3: #ffff74;
+      --v-warning-lighten2: #fff956;
+      --v-warning-lighten1: #ffdd37;
+      --v-warning-darken1: #e0a600;
+      --v-warning-darken2: #c18c00;
+      --v-warning-darken3: #a27300;
+      --v-warning-darken4: #855a00;
+    }
+
+    .v-application a {
+      color: var(--v-anchor-base);
+    }
+
+    .v-application .primary {
+      background-color: var(--v-primary-base) !important;
+      border-color: var(--v-primary-base) !important;
+    }
+
+    .v-application .primary--text {
+      color: var(--v-primary-base) !important;
+      caret-color: var(--v-primary-base) !important;
+    }
+
+    .v-application .primary.lighten-1 {
+      background-color: var(--v-primary-lighten1) !important;
+      border-color: var(--v-primary-lighten1) !important;
+    }
+
+    .v-application .primary--text.text--lighten-1 {
+      color: var(--v-primary-lighten1) !important;
+      caret-color: var(--v-primary-lighten1) !important;
+    }
+
+    .v-application .primary.lighten-2 {
+      background-color: var(--v-primary-lighten2) !important;
+      border-color: var(--v-primary-lighten2) !important;
+    }
+
+    .v-application .primary--text.text--lighten-2 {
+      color: var(--v-primary-lighten2) !important;
+      caret-color: var(--v-primary-lighten2) !important;
+    }
+
+    .v-application .primary.lighten-4 {
+      background-color: var(--v-primary-lighten4) !important;
+      border-color: var(--v-primary-lighten4) !important;
+    }
+
+    .v-application .primary--text.text--lighten-4 {
+      color: var(--v-primary-lighten4) !important;
+      caret-color: var(--v-primary-lighten4) !important;
+    }
+
+    .v-application .primary.lighten-5 {
+      background-color: var(--v-primary-lighten5) !important;
+      border-color: var(--v-primary-lighten5) !important;
+    }
+
+    .v-application .primary--text.text--lighten-5 {
+      color: var(--v-primary-lighten5) !important;
+      caret-color: var(--v-primary-lighten5) !important;
+    }
+
+    .v-application .primary.darken-1 {
+      background-color: var(--v-primary-darken1) !important;
+      border-color: var(--v-primary-darken1) !important;
+    }
+
+    .v-application .primary--text.text--darken-1 {
+      color: var(--v-primary-darken1) !important;
+      caret-color: var(--v-primary-darken1) !important;
+    }
+
+    .v-application .secondary {
+      background-color: var(--v-secondary-base) !important;
+      border-color: var(--v-secondary-base) !important;
+    }
+
+    .v-application .secondary--text {
+      color: var(--v-secondary-base) !important;
+      caret-color: var(--v-secondary-base) !important;
+    }
+
+    .v-application .secondary.lighten-1 {
+      background-color: var(--v-secondary-lighten1) !important;
+      border-color: var(--v-secondary-lighten1) !important;
+    }
+
+    .v-application .secondary--text.text--lighten-1 {
+      color: var(--v-secondary-lighten1) !important;
+      caret-color: var(--v-secondary-lighten1) !important;
+    }
+
+    .v-application .secondary.lighten-2 {
+      background-color: var(--v-secondary-lighten2) !important;
+      border-color: var(--v-secondary-lighten2) !important;
+    }
+
+    .v-application .secondary--text.text--lighten-2 {
+      color: var(--v-secondary-lighten2) !important;
+      caret-color: var(--v-secondary-lighten2) !important;
+    }
+
+    .v-application .secondary.lighten-3 {
+      background-color: var(--v-secondary-lighten3) !important;
+      border-color: var(--v-secondary-lighten3) !important;
+    }
+
+    .v-application .secondary--text.text--lighten-3 {
+      color: var(--v-secondary-lighten3) !important;
+      caret-color: var(--v-secondary-lighten3) !important;
+    }
+
+    .v-application .secondary.lighten-4 {
+      background-color: var(--v-secondary-lighten4) !important;
+      border-color: var(--v-secondary-lighten4) !important;
+    }
+
+    .v-application .secondary--text.text--lighten-4 {
+      color: var(--v-secondary-lighten4) !important;
+      caret-color: var(--v-secondary-lighten4) !important;
+    }
+
+    .v-application .secondary.lighten-5 {
+      background-color: var(--v-secondary-lighten5) !important;
+      border-color: var(--v-secondary-lighten5) !important;
+    }
+
+    .v-application .secondary--text.text--lighten-5 {
+      color: var(--v-secondary-lighten5) !important;
+      caret-color: var(--v-secondary-lighten5) !important;
+    }
+
+    .v-application .accent {
+      background-color: var(--v-accent-base) !important;
+      border-color: var(--v-accent-base) !important;
+    }
+
+    .v-application .accent--text {
+      color: var(--v-accent-base) !important;
+      caret-color: var(--v-accent-base) !important;
+    }
+
+    .v-application .accent.lighten-5 {
+      background-color: var(--v-accent-lighten5) !important;
+      border-color: var(--v-accent-lighten5) !important;
+    }
+
+    .v-application .accent--text.text--lighten-5 {
+      color: var(--v-accent-lighten5) !important;
+      caret-color: var(--v-accent-lighten5) !important;
+    }
+
+    .v-application .accent.lighten-4 {
+      background-color: var(--v-accent-lighten4) !important;
+      border-color: var(--v-accent-lighten4) !important;
+    }
+
+    .v-application .accent--text.text--lighten-4 {
+      color: var(--v-accent-lighten4) !important;
+      caret-color: var(--v-accent-lighten4) !important;
+    }
+
+    .v-application .accent.lighten-3 {
+      background-color: var(--v-accent-lighten3) !important;
+      border-color: var(--v-accent-lighten3) !important;
+    }
+
+    .v-application .accent--text.text--lighten-3 {
+      color: var(--v-accent-lighten3) !important;
+      caret-color: var(--v-accent-lighten3) !important;
+    }
+
+    .v-application .accent.lighten-2 {
+      background-color: var(--v-accent-lighten2) !important;
+      border-color: var(--v-accent-lighten2) !important;
+    }
+
+    .v-application .accent--text.text--lighten-2 {
+      color: var(--v-accent-lighten2) !important;
+      caret-color: var(--v-accent-lighten2) !important;
+    }
+
+    .v-application .accent.lighten-1 {
+      background-color: var(--v-accent-lighten1) !important;
+      border-color: var(--v-accent-lighten1) !important;
+    }
+
+    .v-application .accent--text.text--lighten-1 {
+      color: var(--v-accent-lighten1) !important;
+      caret-color: var(--v-accent-lighten1) !important;
+    }
+
+    .v-application .accent.darken-1 {
+      background-color: var(--v-accent-darken1) !important;
+      border-color: var(--v-accent-darken1) !important;
+    }
+
+    .v-application .accent--text.text--darken-1 {
+      color: var(--v-accent-darken1) !important;
+      caret-color: var(--v-accent-darken1) !important;
+    }
+
+    .v-application .accent.darken-2 {
+      background-color: var(--v-accent-darken2) !important;
+      border-color: var(--v-accent-darken2) !important;
+    }
+
+    .v-application .accent--text.text--darken-2 {
+      color: var(--v-accent-darken2) !important;
+      caret-color: var(--v-accent-darken2) !important;
+    }
+
+    .v-application .accent.darken-3 {
+      background-color: var(--v-accent-darken3) !important;
+      border-color: var(--v-accent-darken3) !important;
+    }
+
+    .v-application .accent--text.text--darken-3 {
+      color: var(--v-accent-darken3) !important;
+      caret-color: var(--v-accent-darken3) !important;
+    }
+
+    .v-application .accent.darken-4 {
+      background-color: var(--v-accent-darken4) !important;
+      border-color: var(--v-accent-darken4) !important;
+    }
+
+    .v-application .accent--text.text--darken-4 {
+      color: var(--v-accent-darken4) !important;
+      caret-color: var(--v-accent-darken4) !important;
+    }
+
+    .v-application .error {
+      background-color: var(--v-error-base) !important;
+      border-color: var(--v-error-base) !important;
+    }
+
+    .v-application .error--text {
+      color: var(--v-error-base) !important;
+      caret-color: var(--v-error-base) !important;
+    }
+
+    .v-application .error.lighten-5 {
+      background-color: var(--v-error-lighten5) !important;
+      border-color: var(--v-error-lighten5) !important;
+    }
+
+    .v-application .error--text.text--lighten-5 {
+      color: var(--v-error-lighten5) !important;
+      caret-color: var(--v-error-lighten5) !important;
+    }
+
+    .v-application .error.lighten-4 {
+      background-color: var(--v-error-lighten4) !important;
+      border-color: var(--v-error-lighten4) !important;
+    }
+
+    .v-application .error--text.text--lighten-4 {
+      color: var(--v-error-lighten4) !important;
+      caret-color: var(--v-error-lighten4) !important;
+    }
+
+    .v-application .error.lighten-3 {
+      background-color: var(--v-error-lighten3) !important;
+      border-color: var(--v-error-lighten3) !important;
+    }
+
+    .v-application .error--text.text--lighten-3 {
+      color: var(--v-error-lighten3) !important;
+      caret-color: var(--v-error-lighten3) !important;
+    }
+
+    .v-application .error.lighten-2 {
+      background-color: var(--v-error-lighten2) !important;
+      border-color: var(--v-error-lighten2) !important;
+    }
+
+    .v-application .error--text.text--lighten-2 {
+      color: var(--v-error-lighten2) !important;
+      caret-color: var(--v-error-lighten2) !important;
+    }
+
+    .v-application .error.lighten-1 {
+      background-color: var(--v-error-lighten1) !important;
+      border-color: var(--v-error-lighten1) !important;
+    }
+
+    .v-application .error--text.text--lighten-1 {
+      color: var(--v-error-lighten1) !important;
+      caret-color: var(--v-error-lighten1) !important;
+    }
+
+    .v-application .error.darken-1 {
+      background-color: var(--v-error-darken1) !important;
+      border-color: var(--v-error-darken1) !important;
+    }
+
+    .v-application .error--text.text--darken-1 {
+      color: var(--v-error-darken1) !important;
+      caret-color: var(--v-error-darken1) !important;
+    }
+
+    .v-application .error.darken-2 {
+      background-color: var(--v-error-darken2) !important;
+      border-color: var(--v-error-darken2) !important;
+    }
+
+    .v-application .error--text.text--darken-2 {
+      color: var(--v-error-darken2) !important;
+      caret-color: var(--v-error-darken2) !important;
+    }
+
+    .v-application .error.darken-3 {
+      background-color: var(--v-error-darken3) !important;
+      border-color: var(--v-error-darken3) !important;
+    }
+
+    .v-application .error--text.text--darken-3 {
+      color: var(--v-error-darken3) !important;
+      caret-color: var(--v-error-darken3) !important;
+    }
+
+    .v-application .error.darken-4 {
+      background-color: var(--v-error-darken4) !important;
+      border-color: var(--v-error-darken4) !important;
+    }
+
+    .v-application .error--text.text--darken-4 {
+      color: var(--v-error-darken4) !important;
+      caret-color: var(--v-error-darken4) !important;
+    }
+
+    .v-application .info {
+      background-color: var(--v-info-base) !important;
+      border-color: var(--v-info-base) !important;
+    }
+
+    .v-application .info--text {
+      color: var(--v-info-base) !important;
+      caret-color: var(--v-info-base) !important;
+    }
+
+    .v-application .info.lighten-5 {
+      background-color: var(--v-info-lighten5) !important;
+      border-color: var(--v-info-lighten5) !important;
+    }
+
+    .v-application .info--text.text--lighten-5 {
+      color: var(--v-info-lighten5) !important;
+      caret-color: var(--v-info-lighten5) !important;
+    }
+
+    .v-application .info.lighten-4 {
+      background-color: var(--v-info-lighten4) !important;
+      border-color: var(--v-info-lighten4) !important;
+    }
+
+    .v-application .info--text.text--lighten-4 {
+      color: var(--v-info-lighten4) !important;
+      caret-color: var(--v-info-lighten4) !important;
+    }
+
+    .v-application .info.lighten-3 {
+      background-color: var(--v-info-lighten3) !important;
+      border-color: var(--v-info-lighten3) !important;
+    }
+
+    .v-application .info--text.text--lighten-3 {
+      color: var(--v-info-lighten3) !important;
+      caret-color: var(--v-info-lighten3) !important;
+    }
+
+    .v-application .info.lighten-2 {
+      background-color: var(--v-info-lighten2) !important;
+      border-color: var(--v-info-lighten2) !important;
+    }
+
+    .v-application .info--text.text--lighten-2 {
+      color: var(--v-info-lighten2) !important;
+      caret-color: var(--v-info-lighten2) !important;
+    }
+
+    .v-application .info.lighten-1 {
+      background-color: var(--v-info-lighten1) !important;
+      border-color: var(--v-info-lighten1) !important;
+    }
+
+    .v-application .info--text.text--lighten-1 {
+      color: var(--v-info-lighten1) !important;
+      caret-color: var(--v-info-lighten1) !important;
+    }
+
+    .v-application .info.darken-1 {
+      background-color: var(--v-info-darken1) !important;
+      border-color: var(--v-info-darken1) !important;
+    }
+
+    .v-application .info--text.text--darken-1 {
+      color: var(--v-info-darken1) !important;
+      caret-color: var(--v-info-darken1) !important;
+    }
+
+    .v-application .info.darken-2 {
+      background-color: var(--v-info-darken2) !important;
+      border-color: var(--v-info-darken2) !important;
+    }
+
+    .v-application .info--text.text--darken-2 {
+      color: var(--v-info-darken2) !important;
+      caret-color: var(--v-info-darken2) !important;
+    }
+
+    .v-application .info.darken-3 {
+      background-color: var(--v-info-darken3) !important;
+      border-color: var(--v-info-darken3) !important;
+    }
+
+    .v-application .info--text.text--darken-3 {
+      color: var(--v-info-darken3) !important;
+      caret-color: var(--v-info-darken3) !important;
+    }
+
+    .v-application .info.darken-4 {
+      background-color: var(--v-info-darken4) !important;
+      border-color: var(--v-info-darken4) !important;
+    }
+
+    .v-application .info--text.text--darken-4 {
+      color: var(--v-info-darken4) !important;
+      caret-color: var(--v-info-darken4) !important;
+    }
+
+    .v-application .success {
+      background-color: var(--v-success-base) !important;
+      border-color: var(--v-success-base) !important;
+    }
+
+    .v-application .success--text {
+      color: var(--v-success-base) !important;
+      caret-color: var(--v-success-base) !important;
+    }
+
+    .v-application .success.lighten-5 {
+      background-color: var(--v-success-lighten5) !important;
+      border-color: var(--v-success-lighten5) !important;
+    }
+
+    .v-application .success--text.text--lighten-5 {
+      color: var(--v-success-lighten5) !important;
+      caret-color: var(--v-success-lighten5) !important;
+    }
+
+    .v-application .success.lighten-4 {
+      background-color: var(--v-success-lighten4) !important;
+      border-color: var(--v-success-lighten4) !important;
+    }
+
+    .v-application .success--text.text--lighten-4 {
+      color: var(--v-success-lighten4) !important;
+      caret-color: var(--v-success-lighten4) !important;
+    }
+
+    .v-application .success.lighten-3 {
+      background-color: var(--v-success-lighten3) !important;
+      border-color: var(--v-success-lighten3) !important;
+    }
+
+    .v-application .success--text.text--lighten-3 {
+      color: var(--v-success-lighten3) !important;
+      caret-color: var(--v-success-lighten3) !important;
+    }
+
+    .v-application .success.lighten-2 {
+      background-color: var(--v-success-lighten2) !important;
+      border-color: var(--v-success-lighten2) !important;
+    }
+
+    .v-application .success--text.text--lighten-2 {
+      color: var(--v-success-lighten2) !important;
+      caret-color: var(--v-success-lighten2) !important;
+    }
+
+    .v-application .success.lighten-1 {
+      background-color: var(--v-success-lighten1) !important;
+      border-color: var(--v-success-lighten1) !important;
+    }
+
+    .v-application .success--text.text--lighten-1 {
+      color: var(--v-success-lighten1) !important;
+      caret-color: var(--v-success-lighten1) !important;
+    }
+
+    .v-application .success.darken-1 {
+      background-color: var(--v-success-darken1) !important;
+      border-color: var(--v-success-darken1) !important;
+    }
+
+    .v-application .success--text.text--darken-1 {
+      color: var(--v-success-darken1) !important;
+      caret-color: var(--v-success-darken1) !important;
+    }
+
+    .v-application .success.darken-2 {
+      background-color: var(--v-success-darken2) !important;
+      border-color: var(--v-success-darken2) !important;
+    }
+
+    .v-application .success--text.text--darken-2 {
+      color: var(--v-success-darken2) !important;
+      caret-color: var(--v-success-darken2) !important;
+    }
+
+    .v-application .success.darken-3 {
+      background-color: var(--v-success-darken3) !important;
+      border-color: var(--v-success-darken3) !important;
+    }
+
+    .v-application .success--text.text--darken-3 {
+      color: var(--v-success-darken3) !important;
+      caret-color: var(--v-success-darken3) !important;
+    }
+
+    .v-application .success.darken-4 {
+      background-color: var(--v-success-darken4) !important;
+      border-color: var(--v-success-darken4) !important;
+    }
+
+    .v-application .success--text.text--darken-4 {
+      color: var(--v-success-darken4) !important;
+      caret-color: var(--v-success-darken4) !important;
+    }
+
+    .v-application .warning {
+      background-color: var(--v-warning-base) !important;
+      border-color: var(--v-warning-base) !important;
+    }
+
+    .v-application .warning--text {
+      color: var(--v-warning-base) !important;
+      caret-color: var(--v-warning-base) !important;
+    }
+
+    .v-application .warning.lighten-5 {
+      background-color: var(--v-warning-lighten5) !important;
+      border-color: var(--v-warning-lighten5) !important;
+    }
+
+    .v-application .warning--text.text--lighten-5 {
+      color: var(--v-warning-lighten5) !important;
+      caret-color: var(--v-warning-lighten5) !important;
+    }
+
+    .v-application .warning.lighten-4 {
+      background-color: var(--v-warning-lighten4) !important;
+      border-color: var(--v-warning-lighten4) !important;
+    }
+
+    .v-application .warning--text.text--lighten-4 {
+      color: var(--v-warning-lighten4) !important;
+      caret-color: var(--v-warning-lighten4) !important;
+    }
+
+    .v-application .warning.lighten-3 {
+      background-color: var(--v-warning-lighten3) !important;
+      border-color: var(--v-warning-lighten3) !important;
+    }
+
+    .v-application .warning--text.text--lighten-3 {
+      color: var(--v-warning-lighten3) !important;
+      caret-color: var(--v-warning-lighten3) !important;
+    }
+
+    .v-application .warning.lighten-2 {
+      background-color: var(--v-warning-lighten2) !important;
+      border-color: var(--v-warning-lighten2) !important;
+    }
+
+    .v-application .warning--text.text--lighten-2 {
+      color: var(--v-warning-lighten2) !important;
+      caret-color: var(--v-warning-lighten2) !important;
+    }
+
+    .v-application .warning.lighten-1 {
+      background-color: var(--v-warning-lighten1) !important;
+      border-color: var(--v-warning-lighten1) !important;
+    }
+
+    .v-application .warning--text.text--lighten-1 {
+      color: var(--v-warning-lighten1) !important;
+      caret-color: var(--v-warning-lighten1) !important;
+    }
+
+    .v-application .warning.darken-1 {
+      background-color: var(--v-warning-darken1) !important;
+      border-color: var(--v-warning-darken1) !important;
+    }
+
+    .v-application .warning--text.text--darken-1 {
+      color: var(--v-warning-darken1) !important;
+      caret-color: var(--v-warning-darken1) !important;
+    }
+
+    .v-application .warning.darken-2 {
+      background-color: var(--v-warning-darken2) !important;
+      border-color: var(--v-warning-darken2) !important;
+    }
+
+    .v-application .warning--text.text--darken-2 {
+      color: var(--v-warning-darken2) !important;
+      caret-color: var(--v-warning-darken2) !important;
+    }
+
+    .v-application .warning.darken-3 {
+      background-color: var(--v-warning-darken3) !important;
+      border-color: var(--v-warning-darken3) !important;
+    }
+
+    .v-application .warning--text.text--darken-3 {
+      color: var(--v-warning-darken3) !important;
+      caret-color: var(--v-warning-darken3) !important;
+    }
+
+    .v-application .warning.darken-4 {
+      background-color: var(--v-warning-darken4) !important;
+      border-color: var(--v-warning-darken4) !important;
+    }
+
+    .v-application .warning--text.text--darken-4 {
+      color: var(--v-warning-darken4) !important;
+      caret-color: var(--v-warning-darken4) !important;
+    }
+  </style>
+  <script async="" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/clarity.js"></script>
+  <script type="text/javascript" async=""
+    src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/js"></script>
+  <script type="text/javascript" async=""
+    src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/js_002"></script>
+  <script async="" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/bx9j449r3o.js">
+  </script>
+  <script async="" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/gtm.js"></script>
+  <script data-n-head="ssr" data-hid="adsbygoogle-script" defer="defer" crossorigin="anonymous"
+    src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/adsbygoogle.js"></script>
+  <script data-n-head="ssr" data-hid="adsbygoogle">
+    if (!window.__abg_called) {
+      (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+      (window.adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8273109185733036",
+        enable_page_level_ads: false,
+        overlays: {
+          bottom: false
+        }
+      });
+      window.__abg_called = true;
+    }
+  </script>
+  <script data-n-head="ssr" data-hid="gtm-script">
+    if (!window._gtm_init) {
+      window._gtm_init = 1;
+      (function (w, n, d, m, e, p) {
+        w[d] = (w[d] == 1 || n[d] == 'yes' || n[d] == 1 || n[m] == 1 || (w[e] && w[e][p] && w[e][p]())) ? 1 : 0
+      })(window, navigator, 'doNotTrack', 'msDoNotTrack', 'external', 'msTrackingProtectionEnabled');
+      (function (w, d, s, l, x, y) {
+        w[x] = {};
+        w._gtm_inject = function (i) {
+          if (w.doNotTrack || w[x][i]) return;
+          w[x][i] = 1;
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s);
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i;
+          f.parentNode.insertBefore(j, f);
+        };
+        w[y]('GTM-TTD376G')
+      })(window, document, 'script', 'dataLayer', '_gtm_ids', '_gtm_inject')
+    }
+  </script>
+  <script data-n-head="ssr" data-hid="gf-script">
+    (function () {
+      var l = document.createElement('link');
+      l.rel = "stylesheet";
+      l.href =
+        "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Barlow:wght@400;500;700;900&family=Barlow+Condensed:wght@400;500;700&family=Merriweather:wght@300;400;700;900&display=swap";
+      document.querySelector("head").appendChild(l);
+    })();
+  </script>
+  <link rel="stylesheet" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/css2.css">
+  <noscript data-n-head="ssr" data-hid="gf-noscript">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Barlow:wght@400;500;700;900&family=Barlow+Condensed:wght@400;500;700&family=Merriweather:wght@300;400;700;900&display=swap">
+    </noscript>
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/07edbee.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/150565e.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/28286a8.css"
+    as="style">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/fb6f255.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/b7472f2.css"
+    as="style">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/5726b01.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/bea53c8.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/227b6c3.js"
+    as="script">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/30a072d.css"
+    as="style">
+  <link rel="preload" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/d0e5824.js"
+    as="script">
+  <link rel="stylesheet" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/28286a8.css">
+  <link rel="stylesheet" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/b7472f2.css">
+  <link rel="stylesheet" href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/30a072d.css">
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/logger-1.min.js" async="">
+  </script>
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/4410896.js">
+  </script>
+  <link href="https://www.googletagmanager.com/" rel="preconnect">
+  <script async="" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/js_003"></script>
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/6ae3c89.js">
+  </script>
+  <link rel="preload" as="style"
+    href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/e2d8146.css">
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/78664f6.js">
+  </script>
+  <link rel="preload" as="style"
+    href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/5a5ba55.css">
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/64a016c.js">
+  </script>
+  <link rel="preload" as="style"
+    href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/9b6c1dd.css">
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/64ff9ca.js">
+  </script>
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/add0b8a.js">
+  </script>
+  <link data-n-head="ssr" data-hid="canonical" rel="canonical"
+    href="https://blog.lolinemag.com/article/b859c055-2a71-4a47-9f35-28aaed3205a8/">
+  <meta data-n-head="ssr">
+  <meta data-n-head="ssr" data-hid="og:type" name="og:type" content="article">
+  <meta data-n-head="ssr" data-hid="og:url" property="og:url"
+    content="undefinedarticle/b859c055-2a71-4a47-9f35-28aaed3205a8/">
+  <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="">
+  <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="ትንሹ አምላክ">
+  <meta data-n-head="ssr" data-hid="description" name="description" content="አንዳንድ ነገሮች">
+  <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="አንዳንድ ነገሮች">
+  <meta data-n-head="ssr" data-hid="og:image" property="og:image"
+    content="https://api.lolinemag.com/storage/2985/responsive-images/ppbisqIbKJ8U___k_1751_2160.jpg">
+  <meta data-n-head="ssr" property="author" content="Rosechorus">
+  <meta data-n-head="ssr" property="article:author" content="https://blog.lolinemag.com/blogger/Rosechorus/">
+  <meta data-n-head="ssr" property="article:published_time" content="2022-08-28T18:30:33.000000Z">
+  <meta data-n-head="ssr" property="article:modified_time" content="2022-08-29T09:28:02.000000Z">
+  <meta data-n-head="ssr" property="article:tag" content="Entertainment,Fiction">
+  <link rel="preload" as="style"
+    href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/d584ee3.css">
+  <script charset="utf-8" src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/3ae8047.js">
+  </script>
+</head>
+
+<body>
+  <noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true"><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-TTD376G&" height="0" width="0"
+      style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+  <div id="__nuxt">
+    <!---->
+    <div id="__layout">
+      <div data-app="true" id="app" class="v-application v-application--is-ltr theme--dark">
+        <div class="v-application--wrap">
+          <div>
+            <header
+              class="header v-sheet theme--dark v-toolbar v-app-bar v-app-bar--elevate-on-scroll v-app-bar--fixed v-app-bar--hide-shadow"
+              style="height: 80px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;"
+              data-booted="true">
+              <div class="v-toolbar__content" style="height: 80px;">
+                <div class="container d-flex align-center px-6 px-md-3">
+                  <div class="logo-container"><a href="https://blog.lolinemag.com/" class="nuxt-link-active"><img
+                        src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/logo.dd34985.svg"
+                        alt="logo" class="logo" height="32"></a></div>
+                  <div class="spacer"></div>
+                  <div class="header__search d-flex align-center justify-end mr-3">
+                    <div class="header__search__input d-flex align-center">
+                      <div
+                        class="v-input v-input--hide-details v-input--dense theme--dark v-text-field v-text-field--single-line v-text-field--solo v-text-field--solo-flat v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-text-field--placeholder v-text-field--rounded">
+                        <div class="v-input__control">
+                          <div class="v-input__slot">
+                            <fieldset aria-hidden="true">
+                              <legend><span class="notranslate">​</span></legend>
+                            </fieldset>
+                            <div class="v-text-field__slot"><input id="input-140" placeholder="Search" type="text">
+                            </div>
+                            <div class="v-input__append-inner"><button type="button"
+                                class="v-icon notranslate v-icon--link theme--dark"><svg
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                  class="v-icon__svg">
+                                  <path
+                                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z">
+                                  </path>
+                                </svg></button></div>
+                          </div>
+                        </div>
+                      </div> <button type="button"
+                        class="ml-2 v-btn v-btn--icon v-btn--round theme--dark v-size--small primary--text text--lighten-5"
+                        aria-label="Close Search"><span class="v-btn__content"><span aria-hidden="true"
+                            class="v-icon notranslate theme--dark"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg">
+                              <path
+                                d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                              </path>
+                            </svg></span></span></button>
+                    </div> <button type="button"
+                      class="v-btn v-btn--icon v-btn--round theme--dark v-size--small primary--text text--lighten-5"
+                      aria-label="Show Search"><span class="v-btn__content"><span aria-hidden="true"
+                          class="v-icon notranslate theme--dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg">
+                            <path
+                              d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z">
+                            </path>
+                          </svg></span></span></button>
+                  </div>
+                  <div class="header__links">
+                    <div class="d-flex align-center"><span
+                        class="v-badge mr-4 v-badge--bordered v-badge--overlap theme--dark"><button type="button"
+                          class="v-btn v-btn--icon v-btn--round theme--dark v-size--small primary--text text--lighten-5"
+                          aria-label="Show Notifications" role="button" aria-haspopup="true" aria-expanded="false"><span
+                            class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                class="v-icon__svg">
+                                <path
+                                  d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21">
+                                </path>
+                              </svg></span></span></button><span class="v-badge__wrapper"><span aria-atomic="true"
+                            aria-label="Badge" aria-live="polite" role="status" class="v-badge__badge error"
+                            style="inset: auto auto calc(100% - 12px) calc(100% - 12px); display: none;"></span></span></span>
+                      <div class="v-menu">
+                        <!---->
+                      </div>
+                      <div class="v-menu">
+                        <!---->
+                      </div>
+                      <div aria-label="Account" role="button" aria-haspopup="true" aria-expanded="false"
+                        class="d-flex align-center">
+                        <div class="v-avatar" style="height: 36px; min-width: 36px; width: 36px;"><span
+                            aria-hidden="true" class="v-icon notranslate theme--dark"
+                            style="font-size: 36px; height: 36px; width: 36px;"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"
+                              style="font-size: 36px; height: 36px; width: 36px;">
+                              <path
+                                d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z">
+                              </path>
+                            </svg></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+            </header>
+            <!---->
+          </div>
+          <div data-v-96e5f098="" class="mt-16 pt-md-4">
+            <div data-v-96e5f098="" class="container ad-bar py-2" style="--ad-image-height: 120px;">
+              <div data-v-96e5f098=""><ins data-v-96e5f098="" data-ad-client="ca-pub-8273109185733036"
+                  data-ad-slot="8274318170" data-ad-format="auto" data-ad-region="page-0.49336160891113745"
+                  class="adsbygoogle" style="display: block;" full-width-responsive="true"></ins></div>
+            </div>
+          </div>
+          <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;"
+            data-booted="true">
+            <div class="v-main__wrap">
+              <div>
+                <div role="dialog" class="v-dialog__container">
+                  <!---->
+                </div>
+              </div>
+              <div class="grey--text text--lighten-2">
+                <div class="article grey--text text--lighten-2">
+                  <div role="dialog" class="v-dialog__container">
+                    <!---->
+                  </div>
+                  <div class="article__content">
+                    <!---->
+                    <div class="container mt-4 px-6 px-md-3">
+                      <div class="v-skeleton-loader theme--dark">
+                        <div>
+                          <div>
+                            <article class="row">
+                              <section class="col-12 col-md-7">
+                                <h1 class="mb-6 article__content__title">
+                                  ትንሹ አምላክ
+                                </h1>
+                                <div class="row text-body-2 align-center">
+                                  <div class="pb-0 d-flex flex-wrap align-center col col-12">
+                                    <div
+                                      class="category-chip d-inline-block mr-2 px-2 py-1 text-body-2 rounded mb-3 mr-2 mr-md-4">
+                                      <a href="https://blog.lolinemag.com/categories/entertainment" class="">
+                                        <div class="secondary--texttext--lighten-5">
+                                          Entertainment
+                                        </div>
+                                      </a></div>
+                                    <div
+                                      class="category-chip d-inline-block mr-2 px-2 py-1 text-body-2 rounded mb-3 mr-2 mr-md-4">
+                                      <a href="https://blog.lolinemag.com/categories/fiction" class="">
+                                        <div class="secondary--texttext--lighten-5">
+                                          Fiction
+                                        </div>
+                                      </a></div>
+                                    <div class="mb-3 mr-2 mr-md-4">
+                                      1 min read
+                                    </div>
+                                  </div>
+                                  <div class="d-flex align-center col">
+                                    <div role="button" aria-haspopup="true" aria-expanded="false"><a
+                                        href="https://blog.lolinemag.com/blogger/Rosechorus/"
+                                        class="d-flex align-center mr-4">
+                                        <div class="v-avatar mr-3" style="height: 32px; min-width: 32px; width: 32px;">
+                                          <img
+                                            src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/UcXaZ4Sp7pjd-thumb.jpg"
+                                            alt="author"></div>
+                                        <div>Rosechorus</div>
+                                      </a></div>
+                                    <div class="v-menu">
+                                      <!---->
+                                    </div>
+                                    <div class="article__content__date mr-2 mr-md-4">
+                                      Aug 28, 2022
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-md-end col-md-4 col-12">
+                                    <div><button type="button"
+                                        class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                        title="Copy Link" aria-label="Copy link"><span class="v-btn__content"><span
+                                            aria-hidden="true" class="v-icon notranslate theme--dark white--text"
+                                            style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                              aria-hidden="true" class="v-icon__svg"
+                                              style="font-size: 16px; height: 16px; width: 16px;">
+                                              <path
+                                                d="M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z">
+                                              </path>
+                                            </svg></span></span></button> <button type="button"
+                                        class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                        title="Share on Facebook" aria-label="Share on Facebook"><span
+                                          class="v-btn__content"><a href="javascript:void(0)"
+                                            class="share-network-facebook" aria-label="Share on Facebook"><span
+                                              aria-hidden="true" class="v-icon notranslate theme--dark white--text"
+                                              style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                aria-hidden="true" class="v-icon__svg"
+                                                style="font-size: 16px; height: 16px; width: 16px;">
+                                                <path
+                                                  d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                                                </path>
+                                              </svg></span></a></span></button><button type="button"
+                                        class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                        title="Share on LinkedIn" aria-label="Share on LinkedIn"><span
+                                          class="v-btn__content"><a href="javascript:void(0)"
+                                            class="share-network-linkedin" aria-label="Share on LinkedIn"><span
+                                              aria-hidden="true" class="v-icon notranslate theme--dark white--text"
+                                              style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                aria-hidden="true" class="v-icon__svg"
+                                                style="font-size: 16px; height: 16px; width: 16px;">
+                                                <path
+                                                  d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z">
+                                                </path>
+                                              </svg></span></a></span></button><button type="button"
+                                        class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                        title="Share on Twitter" aria-label="Share on Twitter"><span
+                                          class="v-btn__content"><a href="javascript:void(0)"
+                                            class="share-network-twitter" aria-label="Share on Twitter"><span
+                                              aria-hidden="true" class="v-icon notranslate theme--dark white--text"
+                                              style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                aria-hidden="true" class="v-icon__svg"
+                                                style="font-size: 16px; height: 16px; width: 16px;">
+                                                <path
+                                                  d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z">
+                                                </path>
+                                              </svg></span></a></span></button></div>
+                                  </div>
+                                </div>
+                              </section>
+                              <section class="pa-0 col-12 col-md-4"></section>
+                              <div class="col-12">
+                                <div class="row justify-space-between">
+                                  <div class="cols-12 col-md-7">
+                                    <section>
+                                      <div>
+                                        <div class="v-responsive secondary lighten-2">
+                                          <div class="v-responsive__sizer" style="padding-bottom: 52.356%;"></div>
+                                          <div class="v-responsive__content"><img
+                                              src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_1751_2160.jpg"
+                                              srcset="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_1751_2160.jpg 1751w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_1464_1805.jpg 1464w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_1225_1511.jpg 1225w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_1025_1264.jpg 1025w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_857_1057.jpg 857w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_717_884.jpg 717w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_600_740.jpg 600w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_502_619.jpg 502w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_420_518.jpg 420w, %E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/ppbisqIbKJ8U___k_351_432.jpg 351w, data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgMTc1MSAyMTYwIj4KCTxpbWFnZSB3aWR0aD0iMTc1MSIgaGVpZ2h0PSIyMTYwIiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk5qSXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUp3QWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QXNlTGZodE5wMWkwb2pKeHowcjRqbjFQc0hSUjU0dWtpNmpLVHB0d2EwZFhRaU5JMHRPMG1IU1VNN1lTTWR6WE82a25zYXVrbHVkR25oZUxVdE9TN2pLc3Jkd2FVWnlUMUpqR0wwUjlLZUt0R2kxWFR3a2FqQjROY3NwSGRGSGtIaXo0ZTIrbVdobUdNOWNDc2xOM0hLS1BCZkc4dXM2cEliRFQ0bTJBNDQ3MTZ0SndpcnM4NnE1U2RrWk56ckhqTHdkcENKS2tpMjZqcWE3WWV5cUhESlZhZXA5ZjY5OFVZZEduRnN3NHp6bXZHOWx6STl0enN6ay9pSjhSTEI5QTgrS1FNK1B1NXJuVkJ1ZGgxS2lVYnM4MzBQV3JkRlM5bVZSdTVHUld6aTA3SE5DUzNaQjhVUEhGanEzaGlTQkVYY0IxQXJwdzErY212Sk9CMVg3UUhoKyt0cnI3WlpNQkYzcXFjMDlDNXByVThRc285VjF0aERJV2VOVHlLMWtvdzFNL2VxYUhkMmZoK1c2Z2loWUZWVVlyejNPN3VicW4wWmkvRUR3c3VsYUZKSURtdHNQTDN6S3ZCS0I2aDQxMU80OFozazFxcmxJSStvUGVsL0RWelMvdEpXT1A4T2FhdW1haThKd1FlS3pxMUxvMmhIbFoycVc0U0U3UUJYR21iTTRyNG53eUh3ek1XT1FLN2NOck00c1Q4Qi8vWiI+Cgk8L2ltYWdlPgo8L3N2Zz4= 32w"
+                                              alt="article-banner-img" loading="lazy"
+                                              class="article__cover__img align-end justify-end" width="100%"
+                                              height="100%"></div>
+                                        </div>
+                                        <p class="article__content__summary my-8">
+                                          አንዳንድ ነገሮች
+                                        </p>
+                                        <hr role="separator" aria-orientation="horizontal"
+                                          class="mb-4 v-divider theme--dark">
+                                      </div>
+                                      <div>
+                                        <div class="ma-0 article__content__text">
+                                          <p>እንደው
+                                            ድንገት እልፍ ስትሉ በሆነ አጋጣሚ እንኳን የፀጋዬ እሸቱን 'ሆዴ ክፉ ዕዳዬ' የሚለውን ሙዚቃ ሰምታችሁ ታውቁ
+                                            ይሆን? ለስለስ ቀዝቀዝ ያለ፣ዕንባውን የቀረበ ካለም አልቅሱ አልቅሱ የሚል የሆድን ባዳነት በሰባት ደቂቃ ባነሰ ዜማ
+                                            ቅልብጭ አድርጎ የሚያሳይ ሙዚቃ ነው።</p>
+                                          <p>አዝማቹ ሆዴ ክፉ ዕዳዬ ነው ይላል። ሲራብ አሳደርኩት ሆድ ጠግቦ
+                                            አይጠግብምና ዳግም እህል ዉሃ አለኝ። እኔም የገዛ ገላዬን በማጣት ውስጥ ሆኜ ታዘብኩት ብሎ ይጀምራል። የሆድ ክፋቱ
+                                            በቃኝ ብሎ አለመጥገቡ ፤ ሲያጣም ጊዜ አለመስጠቱ ነው። ምንም እንኳን እኛ በየቀኑ ለመጥገብ ብዙም ዕድሉ ያለን
+                                            ህዝብ ባንሆንም የዘመናት ችግራችን ግን ይህን አፉን የከፈተ 'ቅድም በላው በቃኝ' የማይለውን ሆዳችንን ማስታገስ
+                                            ነው። የሰው ልጅ ሆድ ልክ እንደምናሳድገው እንደምናስታምመው አነስ ያለ አውሬ ነው። ጥጋቡም ትዕቢትን፣ ረሀቡም
+                                            ጭካኔን ያመጣል።</p>
+                                          <p>በቀጣይ ግጥሙ ላይ የሰው ፊት እንደእሳት እየገረፈው እንደሚለምን እና ቀን ለማይሰጠው
+                                            ሆዱ ትንሽ ነገር ለማቅመስ እንደሚሽቆጠቆጥ ያስረዳል። ያው ይህ የአብዛኞቻችን እውነታ ነው። የሰው ፊት እያየን
+                                            የምንለፋው የምንደክመው የዕለት ጉርስ ቁራሽ እንጀራ ፈልገን ነው። በመስሪያ ቤት፣ በትምህርት ቤትም ይሁን በመኖሪያ
+                                            ቤት ሳንፈልግ ተገደን ላይ ታች የምንለው ሆድ የተባለውን አለቃችንን ዝም ለማስባል ነው። ያው ዞሮ ዞሮ
+                                            የማንሰግድለት ተሸክመነው የምንዞረው አምላካችን ሆኗል። ግን ያሳስባል እውነት ስንፈጥር ሆድ አምላካችን እንዲሆን
+                                            ይሆን? ፈጣሪ የከፈተውንስ ሆድ ሳይዘጋ ያድራልን?</p>
+                                          <p>ሙዚቃው ቀጥሏል። ተው እንጂ ሆዴ ታገስ ሳጣም ቀን
+                                            ስጠኝ ብሎ ይለምነዋል። ርህራሄ ለማያውቀው ሆድ አንጀት የሚበላ ልመና ምኑ ነው? ምንም። የሰውን በደል እና ክፋት
+                                            በብልሃቴ ብርቅም አውጥቼ የማልጥለው ሆድ የተባለ ጠላት ግን ይዤ እዞራለው። ፈጣሪ የአለሙ ቢከብደኝም እንደው ከሞቴ
+                                            በዃላ ያለውን ያስበኝ ብሎ በምድር ላይ ጠላቱ እንዳሸነፈው ያውጃል።</p>
+                                          <p>ከዚህ ሙዚቃ ለየት ያለ ሀሳብ
+                                            የተነሳው የመጨረሻው ስንኝ ላይ ነው። በሞት የተለየኝን ዘመዴን ቀብሬ በአግባቡ ጮኼ ሳይወጣልኝ ሀዘኑ እንኳን
+                                            ሳይረግብልኝ እርምክን አውጣ ተብዬ ዳግም አንተን እመግባለው ይላል። ሆድ ከሀዘን ሁላ በላይ ነው። አልቅሶ እንኳን
+                                            ያልወጣለትን ሰው የእዝን እያልን ሆዱን እናባብለዋለን። 'ህይወት ይቀጥላል' ከሚለው አባባል በላይ ልብ ብለን
+                                            ካየነው 'መብላት ይቀጥላል' የሚለው እውነትነት አለው። ህይወት ሊቀጥልም ላይቀጥልም ይችላል፤ ያው በቁም መሞትም
+                                            ስላለ። ሆድን መቀለብ ግን እስከ ሞት ይቀጥላል።</p>
+                                          <p>ብቻ ምን ለማለት ነው ሽሮም በላ ክትፎ ተመስገን ብሎ ለማይዘጋ በር ብዙ አናንኳኳ ገርበብ አድርገን መተው ይልመድብን
+                                            ለማለት ነው።</p>
+                                        </div>
+                                        <!---->
+                                      </div>
+                                      <div
+                                        class="article__content__actions mt-8 mt-md-12 d-flex justify-space-between align-center">
+                                        <div><button type="button"
+                                            class="v-btn v-btn--text theme--dark v-size--default white--text"><span
+                                              class="v-btn__content">
+                                              <div class="v-avatar mr-1 rounded-0"
+                                                style="height: 20px; min-width: 20px; width: 20px;">
+                                                <div class="v-image v-responsive theme--dark">
+                                                  <div
+                                                    class="v-image__image v-image__image--preload v-image__image--cover"
+                                                    style="background-position: center center;"></div>
+                                                  <div class="v-responsive__content"></div>
+                                                </div>
+                                              </div>
+                                              2
+                                            </span></button> <button type="button"
+                                            class="v-btn v-btn--text theme--dark v-size--default white--text"><span
+                                              class="v-btn__content"><span aria-hidden="true"
+                                                class="v-icon notranslate mr-1 theme--dark"><svg
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                  aria-hidden="true" class="v-icon__svg">
+                                                  <path
+                                                    d="M12,3C6.5,3 2,6.58 2,11C2.05,13.15 3.06,15.17 4.75,16.5C4.75,17.1 4.33,18.67 2,21C4.37,20.89 6.64,20 8.47,18.5C9.61,18.83 10.81,19 12,19C17.5,19 22,15.42 22,11C22,6.58 17.5,3 12,3M12,17C7.58,17 4,14.31 4,11C4,7.69 7.58,5 12,5C16.42,5 20,7.69 20,11C20,14.31 16.42,17 12,17Z">
+                                                  </path>
+                                                </svg></span>
+                                              0
+                                            </span></button></div>
+                                        <div>
+                                          <div><button type="button"
+                                              class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                              title="Copy Link" aria-label="Copy link"><span
+                                                class="v-btn__content"><span aria-hidden="true"
+                                                  class="v-icon notranslate theme--dark white--text"
+                                                  style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                    aria-hidden="true" class="v-icon__svg"
+                                                    style="font-size: 16px; height: 16px; width: 16px;">
+                                                    <path
+                                                      d="M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z">
+                                                    </path>
+                                                  </svg></span></span></button> <button type="button"
+                                              class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                              title="Share on Facebook" aria-label="Share on Facebook"><span
+                                                class="v-btn__content"><a href="javascript:void(0)"
+                                                  class="share-network-facebook" aria-label="Share on Facebook"><span
+                                                    aria-hidden="true"
+                                                    class="v-icon notranslate theme--dark white--text"
+                                                    style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                      aria-hidden="true" class="v-icon__svg"
+                                                      style="font-size: 16px; height: 16px; width: 16px;">
+                                                      <path
+                                                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                                                      </path>
+                                                    </svg></span></a></span></button><button type="button"
+                                              class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                              title="Share on LinkedIn" aria-label="Share on LinkedIn"><span
+                                                class="v-btn__content"><a href="javascript:void(0)"
+                                                  class="share-network-linkedin" aria-label="Share on LinkedIn"><span
+                                                    aria-hidden="true"
+                                                    class="v-icon notranslate theme--dark white--text"
+                                                    style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                      aria-hidden="true" class="v-icon__svg"
+                                                      style="font-size: 16px; height: 16px; width: 16px;">
+                                                      <path
+                                                        d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z">
+                                                      </path>
+                                                    </svg></span></a></span></button><button type="button"
+                                              class="v-btn v-btn--icon v-btn--round v-btn--tile theme--dark v-size--small"
+                                              title="Share on Twitter" aria-label="Share on Twitter"><span
+                                                class="v-btn__content"><a href="javascript:void(0)"
+                                                  class="share-network-twitter" aria-label="Share on Twitter"><span
+                                                    aria-hidden="true"
+                                                    class="v-icon notranslate theme--dark white--text"
+                                                    style="font-size: 16px; height: 16px; width: 16px;"><svg
+                                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                                      aria-hidden="true" class="v-icon__svg"
+                                                      style="font-size: 16px; height: 16px; width: 16px;">
+                                                      <path
+                                                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z">
+                                                      </path>
+                                                    </svg></span></a></span></button></div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    <section class="article__author-bar py-8 d-flex flex-wrap"><a
+                                        href="https://blog.lolinemag.com/blogger/Rosechorus/"
+                                        class="d-flex flex-wrap white--text">
+                                        <div class="v-avatar mr-3" style="height: 48px; min-width: 48px; width: 48px;">
+                                          <img
+                                            src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/UcXaZ4Sp7pjd-thumb.jpg"
+                                            alt="author"></div>
+                                        <div>
+                                          <div class="font-weight-medium">
+                                            Rosechorus
+                                          </div>
+                                          <div class="mt-1 text-body-2">
+                                            24
+                                            Subscribers
+                                          </div>
+                                        </div>
+                                      </a>
+                                      <div class="spacer"></div>
+                                      <div><button type="button"
+                                          class="mt-2 secondary--text v-btn v-btn--is-elevated v-btn--has-bg v-btn--rounded theme--dark v-size--default primary"><span
+                                            class="v-btn__content">
+                                            Subscribe
+                                          </span></button></div>
+                                    </section>
+                                  </div>
+                                  <div class="col-12 col-md-4 article__side">
+                                    <aside class="article__side__content row justify-center pl-md-6">
+                                      <div class="col-12 col-sm-6 col-md-12 my-10 mt-md-0"><a data-v-393f213c=""
+                                          tabindex="0" href="https://blog.lolinemag.com/" target="_blank"
+                                          class="ad-image d-flex align-center v-card v-card--flat v-card--link v-sheet theme--dark transparent"
+                                          style="height: 100%;" rel="noreferrer">
+                                          <div data-v-393f213c=""
+                                            class="v-image v-responsive ad-image__image theme--dark"
+                                            style="max-height: 380px;">
+                                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                            <div class="v-image__image v-image__image--contain"
+                                              style="background-image: url(&quot;https://api.lolinemag.com/storage/1961/conversions/square@4x-800.jpg&quot;); background-position: center center;">
+                                            </div>
+                                            <!---->
+                                            <div class="v-responsive__content" style="width: 800px;">
+                                              <div data-v-393f213c="" class="ad-image__badge">Advertisement</div>
+                                            </div>
+                                          </div>
+                                        </a></div>
+                                      <div class="col-12 mb-6">
+                                        <div class="v-card v-card--flat v-sheet theme--dark trasparent"
+                                          style="min-width: 50px;"><ins data-ad-client="ca-pub-8273109185733036"
+                                            data-ad-slot="4689957071" data-ad-format="fluid"
+                                            data-ad-region="page-0.6277347370414773" data-ad-layout="in-article"
+                                            class="adsbygoogle" style="display: block;"></ins></div>
+                                      </div>
+                                    </aside>
+                                  </div>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="section-extras" class="secondary lighten-1 py-6 py-lg-8">
+                    <div class="container mt-4 px-6 px-md-3">
+                      <div class="row justify-space-between">
+                        <!---->
+                        <div class="col-md-7 col-12">
+                          <div>
+                            <div class="v-card v-sheet theme--dark transparent" style="height: 10px;"></div>
+                          </div>
+                          <section id="section-comments" class="pa-0 section-comments mr-md-6">
+                            <div class="row">
+                              <div class="col col-12">
+                                <div class="section__title mt-0">Comments (0)</div>
+                                <div>
+                                  <div class="d-flex mb-4">
+                                    <div class="v-avatar mr-4" style="height: 40px; min-width: 40px; width: 40px;"><span
+                                        aria-hidden="true" class="v-icon notranslate theme--dark"
+                                        style="font-size: 48px; height: 48px; width: 48px;"><svg
+                                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"
+                                          aria-hidden="true" class="v-icon__svg"
+                                          style="font-size: 48px; height: 48px; width: 48px;">
+                                          <path
+                                            d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z">
+                                          </path>
+                                        </svg></span></div>
+                                    <div class="flex-grow-1">
+                                      <div
+                                        class="v-input v-textarea v-textarea--auto-grow v-textarea--no-resize v-input--hide-details theme--dark v-text-field v-text-field--single-line v-text-field--filled v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-text-field--placeholder">
+                                        <div class="v-input__control">
+                                          <div class="v-input__slot">
+                                            <fieldset aria-hidden="true">
+                                              <legend><span class="notranslate">​</span></legend>
+                                            </fieldset>
+                                            <div class="v-text-field__slot"><textarea name="comment" id="input-687"
+                                                placeholder="Type your comment" rows="2"
+                                                style="height: 48px;"></textarea></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!---->
+                                    </div>
+                                    <div class="flex-grow-1" style="display: none;">
+                                      <div role="alert" class="v-alert v-sheet theme--dark v-alert--dense success">
+                                        <div class="v-alert__wrapper">
+                                          <div class="v-alert__content"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="pt-6 pb-10">No comments yet</div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+                        <div class="col-md-5 col-12">
+                          <div>
+                            <div class="v-card v-sheet theme--dark transparent" style="height: 10px;"></div>
+                          </div>
+                          <section id="section-related-articles" class="section-related-articles ml-md-6">
+                            <div class="section__title mt-0">RELATED ARTICLES</div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pb-4 pb-md-6">
+                              <div aria-busy="true" aria-live="polite" role="alert"
+                                class="v-skeleton-loader fill-height v-skeleton-loader--is-loading theme--dark">
+                                <div class="v-skeleton-loader__list-item-avatar v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__avatar v-skeleton-loader__bone"></div>
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                                <div class="v-skeleton-loader__list-item v-skeleton-loader__bone">
+                                  <div class="v-skeleton-loader__text v-skeleton-loader__bone"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <aside>
+                    <div class="container overflow-hidden px-6 px-md-3">
+                      <div class="row">
+                        <div class="col-md-6 col-12">
+                          <div class="v-card v-card--flat v-sheet theme--dark trasparent"
+                            style="min-height: 50px; min-width: 50px;"><ins data-ad-client="ca-pub-8273109185733036"
+                              data-ad-slot="4689957071" data-ad-format="fluid" data-ad-region="page-0.8541228653872471"
+                              data-ad-layout="in-article" class="adsbygoogle" style="display: block;"></ins></div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                          <div class="v-card v-card--flat v-sheet theme--dark trasparent"
+                            style="min-height: 50px; min-width: 50px;"><ins data-ad-client="ca-pub-8273109185733036"
+                              data-ad-slot="4689957071" data-ad-format="fluid" data-ad-region="page-0.1638398950871378"
+                              data-ad-layout="in-article" class="adsbygoogle" style="display: block;"></ins></div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer id="footer" class="v-footer d-block v-sheet theme--dark v-footer--padless" data-booted="true">
+            <div class="container">
+              <div class="row no-gutters">
+                <div class="py-4 d-flex flex-wrap justify-md-start justify-center col-md-6 col-12"><a
+                    href="https://instagram.com/loline_mag" target="_blank" rel="noreferrer"
+                    aria-label="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                    class="mx-2 v-btn v-btn--icon v-btn--round v-btn--rounded theme--dark v-size--default"><span
+                      class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                          class="v-icon__svg">
+                          <path
+                            d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                          </path>
+                        </svg></span>
+                      <!----></span></a><a href="https://www.linkedin.com/company/lolinemag/" target="_blank"
+                    rel="noreferrer"
+                    aria-label="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
+                    class="mx-2 v-btn v-btn--icon v-btn--round v-btn--rounded theme--dark v-size--default"><span
+                      class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                          class="v-icon__svg">
+                          <path
+                            d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z">
+                          </path>
+                        </svg></span>
+                      <!----></span></a><a href="https://www.facebook.com/LolineMag/" target="_blank" rel="noreferrer"
+                    aria-label="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+                    class="mx-2 v-btn v-btn--icon v-btn--round v-btn--rounded theme--dark v-size--default"><span
+                      class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                          class="v-icon__svg">
+                          <path
+                            d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                          </path>
+                        </svg></span>
+                      <!----></span></a><a href="https://t.me/loline_mag" target="_blank" rel="noreferrer"
+                    aria-label="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z"
+                    class="mx-2 v-btn v-btn--icon v-btn--round v-btn--rounded theme--dark v-size--default"><span
+                      class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                          class="v-icon__svg">
+                          <path
+                            d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z">
+                          </path>
+                        </svg></span>
+                      <!----></span></a><a href="mailto:contact@lolinemag.com" target="_blank" rel="noreferrer"
+                    aria-label="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+                    class="mx-2 v-btn v-btn--icon v-btn--round v-btn--rounded theme--dark v-size--default"><span
+                      class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--dark"><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                          class="v-icon__svg">
+                          <path
+                            d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z">
+                          </path>
+                        </svg></span>
+                      <!----></span></a></div>
+                <div class="pt-4 pt-md-0 d-flex flex-wrap align-center justify-md-end justify-center col-md-6 col-12"><a
+                    href="https://blog.lolinemag.com/policy/terms-of-service/" class="d-block mr-3 mr-md-4">
+                    Privacy
+                  </a> <a href="https://blog.lolinemag.com/policy/terms-of-service/" class="d-block">
+                    Terms
+                  </a></div>
+              </div>
+            </div>
+            <div class="pb-4 primary secondary--text text-center">
+              <hr role="separator" aria-orientation="horizontal" class="mb-4 grey darken-4 v-divider theme--dark">
+              <div>
+                ©2022 — <strong>Loline</strong>
+                | Designed and Built by Loline
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__NUXT__ = (function (a, b, c, d, e, f, g, h, i, j, k, l, m, n) {
+      f.placeholder = a;
+      f.blogs = [f, f, f];
+      g.placeholder = a;
+      g.blogs = [g, g, g];
+      h.placeholder = a;
+      h.blogs = [h, h, h];
+      i.placeholder = a;
+      i.blogs = [i, i, i];
+      j.placeholder = a;
+      j.blogs = [j, j, j];
+      k.placeholder = a;
+      k.blogs = [k, k, k];
+      return {
+        layout: "default",
+        data: [{}],
+        fetch: {},
+        error: d,
+        state: {
+          adverts: {
+            adverts: [],
+            externalAdverts: [],
+            loadingCurrent: a,
+            loadingExternal: c,
+            loading: a,
+            error: b,
+            message: b
+          },
+          articles: {
+            filterQueries: b,
+            articles: [{
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }],
+            bloggerArticles: {
+              blogs: [{
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }, {
+                placeholder: a
+              }],
+              user: {}
+            },
+            bloggerInfo: {},
+            pagination: {
+              links: d,
+              meta: d
+            },
+            drafts: [{
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }],
+            draftsPagination: {
+              links: d,
+              meta: d
+            },
+            article: {
+              placeholder: a
+            },
+            relatedArticles: [{
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }],
+            trendingArticles: [{
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }, {
+              placeholder: a
+            }],
+            categories: [],
+            error: b,
+            message: b,
+            loadingTrending: a,
+            loadingDrafts: c,
+            loading: "LIST_PUBLIC",
+            saving: c,
+            publishing: c
+          },
+          categories: {
+            categories: [],
+            popularCategories: [f, g, h, i, j, k],
+            category: {},
+            error: b,
+            loading: a,
+            saving: c
+          },
+          claps: {
+            claps: [],
+            clapsPagination: {
+              links: d,
+              meta: d
+            },
+            clap: {},
+            message: b,
+            error: b,
+            loading: c
+          },
+          comments: {
+            comments: [],
+            commentsPagination: {
+              links: d,
+              meta: d
+            },
+            replies: [],
+            repliesPagination: {
+              links: d,
+              meta: d
+            },
+            comment: {},
+            message: b,
+            error: b,
+            loading: c,
+            saving: c,
+            deleting: c
+          },
+          contests: {
+            contests: [],
+            contestsPagination: {
+              links: d,
+              meta: d
+            },
+            contest: {
+              placeholder: a
+            },
+            contestants: [],
+            message: b,
+            error: b,
+            loading: c,
+            loadingContestants: c,
+            saving: c
+          },
+          customAuth: {
+            error: b,
+            message: b,
+            user: b,
+            loading: c,
+            showLoginDialog: b,
+            redirectAfterLogin: b
+          },
+          notifications: {
+            notifications: [],
+            notificationsPagination: {
+              links: d,
+              meta: d
+            },
+            notification: {},
+            hasNotification: c,
+            message: b,
+            error: b,
+            loading: c,
+            saving: c
+          },
+          releases: {
+            releases: [],
+            release: {},
+            error: b,
+            loading: c,
+            saving: c
+          },
+          stats: {
+            bloggerStats: {
+              clapsCount: e,
+              viewsCount: e,
+              articlesCount: e,
+              subscribersCount: e
+            },
+            articleStats: {
+              views: [],
+              claps: []
+            },
+            releaseStats: {},
+            error: b,
+            loading: c
+          },
+          subscribers: {
+            subscribers: [],
+            pagination: {},
+            bloggerSubscribers: [],
+            subscriber: {},
+            isSubscribed: c,
+            error: b,
+            message: b,
+            loading: c,
+            saving: c
+          },
+          users: {
+            token: b,
+            error: b,
+            message: b,
+            user: b,
+            users: [],
+            pagination: {},
+            verifiedUsers: [],
+            pendingUsers: [],
+            loading: c
+          },
+          auth: {
+            user: {
+              name: l,
+              email: "tibesolomon7@gmail.com",
+              bio: d,
+              username: l,
+              subscribers_count: e,
+              email_verified: m,
+              profile_pic: b,
+              links: d,
+              verified: c,
+              contestant: [],
+              request_access: c,
+              created_at: "2022-09-17T09:23:10.000000Z",
+              updated_at: m
+            },
+            loggedIn: a,
+            strategy: "local"
+          }
+        },
+        serverRendered: a,
+        routePath: n,
+        config: {
+          apiUrl: "https:\u002F\u002Fapi.lolinemag.com\u002Fapi\u002F",
+          baseUrl: "https:\u002F\u002Fblog.lolinemag.com\u002F",
+          authRedirectUri: "https:\u002F\u002Fblog.lolinemag.com\u002FOauth",
+          googleClientID: "743233773232-efr4gduv4dtrqi1b0gvpj4tee7ar2qsd.apps.googleusercontent.com",
+          facebookClientID: "360908029247967",
+          githubClientID: "78a455562bb7b041945f",
+          linkedinClientID: "788cuyrq99lq6x",
+          _app: {
+            basePath: n,
+            assetsPath: "\u002F_nuxt\u002F",
+            cdnURL: d
+          }
+        }
+      }
+    }(true, "", false, null, 0, {}, {}, {}, {}, {}, {}, "tibex", "2022-09-17T09:23:31.000000Z", "\u002F"));
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/07edbee.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/5726b01.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/bea53c8.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/227b6c3.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/d0e5824.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/150565e.js" defer="defer">
+  </script>
+  <script src="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/fb6f255.js" defer="defer">
+  </script>
+
+
+  <script type="text/javascript" id="">
+    (function (a, e, b, f, g, c, d) {
+      a[b] = a[b] || function () {
+        (a[b].q = a[b].q || []).push(arguments)
+      };
+      c = e.createElement(f);
+      c.async = 1;
+      c.src = "https://www.clarity.ms/tag/" + g + "?ref\x3dgtm2";
+      d = e.getElementsByTagName(f)[0];
+      d.parentNode.insertBefore(c, d)
+    })(window, document, "clarity", "script", "bx9j449r3o");
+  </script>
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/30a072d.css" rel="stylesheet"
+    type="text/css">
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/b7472f2.css" rel="stylesheet"
+    type="text/css">
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/e2d8146.css" rel="stylesheet"
+    type="text/css">
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/5a5ba55.css" rel="stylesheet"
+    type="text/css">
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/9b6c1dd.css" rel="stylesheet"
+    type="text/css">
+  <link href="%E1%89%B5%E1%8A%95%E1%88%B9%20%E1%8A%A0%E1%88%9D%E1%88%8B%E1%8A%AD_files/d584ee3.css" rel="stylesheet"
+    type="text/css">
+</body>
+
+</html>
